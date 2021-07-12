@@ -49,16 +49,48 @@ for (var num = -300; num <= 0; num++) {
     }
 }
 
-
-
 // 5. Printing Integers with While
 // Print integers from 2000 to 5280, using a WHILE.
+
+var e = 2000;
+
+while (e < 5281) {
+    console.log(e);
+    e++;
+}
 
 
 // 6. You Say It’s Your Birthday
 // If 2 given numbers represent your birth month and day in either order, log "How did you know?",
 // else log "Just another day...."
 
+var month = 1;
+var day = 1;
+
+for (var month = 1; month < 13; month++) {
+    if (month == 10) {
+        for (var day = 1; day < 32; day++) {
+            if (day == 21) {
+                console.log(month);
+                console.log(day);
+                console.log("How did you know?");
+            } else {
+                console.log(month);
+                console.log(day);
+                console.log("Just another day...");
+            }
+        }
+    }
+
+    // for (var day = 1; day < 31; day++) {
+    // console.log(day) {
+    //     if (month == 10 && day == 21) {
+    //         console.log("How did you know?");
+    //     } else {
+    //         console.log("Just another day...");
+    //     }
+    // }
+}
 
 // 7. Leap Year
 // Write a function that determines whether a given year is a leap year. If a year is divisible by four, it is
